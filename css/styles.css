@@ -113,12 +113,12 @@ $$$$$$$$$$$$$$$$
 */
 /*++++++++++header++++++++++*/
 
-.header {
+.page-header {
     border-bottom: 1px solid #ECECEC;
 }
 
 /*----------logo-design-----------*/
-.header-logo {
+.logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -126,7 +126,7 @@ $$$$$$$$$$$$$$$$
     letter-spacing: 0.03em;
 }
 
-.header-logo-web {
+.logo__web {
     color: var(--color-light-blue);
 }
 
@@ -136,36 +136,36 @@ $$$$$$$$$$$$$$$$
 
 /*----------logo-design-----------*/
 
-.header-flex {
+.page-header__flex {
     display: flex;
     align-items: center;
 }
 
-.header-nav {
+.nav {
     margin-left: 93px;
 }
 
-.address-list {
+.address__list {
     display: flex;
     margin-left: auto;
     gap: 50px;
 
 }
 
-.nav-list {
+.nav__list {
     display: flex;
     gap: 50px;
 }
 
-.nav-list .current {
+.nav__list .current {
     color: var(--color-light-blue);
 }
 
-.nav-list .nav-item {
+.nav__list .nav-item {
     position: relative;
 }
 
-.nav-list .current::after {
+.nav__list .current::after {
     content: "";
     position: absolute;
 
@@ -177,7 +177,7 @@ $$$$$$$$$$$$$$$$
     height: 4px;
 }
 
-.nav-link {
+.nav__link {
     display: flex;
     align-items: center;
 
@@ -189,7 +189,7 @@ $$$$$$$$$$$$$$$$
     color: var(--color-black-h);
 }
 
-.address-link {
+.address__link {
     display: flex;
     align-items: center;
 
@@ -202,20 +202,20 @@ $$$$$$$$$$$$$$$$
     color: var(--color-grey-p);
 }
 
-.nav-link,
-.address-link {
+.nav__link,
+.address__link {
     transition:
         color 250ms var(--transition-cubic-bezier),
         border-color 250ms var(--transition-cubic-bezier);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav__link:hover,
+.nav__link:focus {
     color: var(--color-light-blue);
 }
 
-.address-link:hover,
-.address-link:focus {
+.address__link:hover,
+.address__link:focus {
     color: var(--color-light-blue);
 }
 
@@ -539,6 +539,10 @@ $$$$$$$$$$$$$$$$
 
 .features-container {
     display: flex;
+
+    justify-content: center;
+    align-items: center;
+
     width: 270px;
     height: 120px;
 
@@ -546,8 +550,7 @@ $$$$$$$$$$$$$$$$
     border-radius: 4px;
 
     margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
+
 
     transition: box-shadow 250ms var(--transition-cubic-bezier);
 }
