@@ -162,7 +162,7 @@ $$$$$$$$$$$$$$$$
     content: "";
     position: absolute;
 
-    bottom: -1px;
+    bottom: 1px;
 
     background-color: var(--color-light-blue);
     border-radius: 22px;
@@ -172,18 +172,17 @@ $$$$$$$$$$$$$$$$
 
 .nav__link {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--color-black-h);
+
+    color: var(--color-grey-p);
 }
 
 .address__link {
+    display: flex;
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
@@ -662,8 +661,6 @@ $$$$$$$$$$$$$$$$
     align-items: center;
 }
 
-.social__item {}
-
 .social__link {
     display: flex;
     justify-content: center;
@@ -745,7 +742,8 @@ $$$$$$$$$$$$$$$$
 }
 
 .footer-address__street {
-    margin-bottom: 9px font-size: 14px;
+    margin-bottom: 9px;
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-white-text);
@@ -803,8 +801,6 @@ $$$$$$$$$$$$$$$$
     justify-content: left;
     align-items: left;
 }
-
-.footer-social__item {}
 
 .footer-social__link {
     display: flex;
@@ -905,6 +901,7 @@ $$$$$$$$$$$$$$$$
 /*===========portfolio-page==========*/
 .portfolio-flex {
     flex-direction: column;
+
 }
 
 .portfolio-buttons-list {
@@ -947,7 +944,9 @@ $$$$$$$$$$$$$$$$
 }
 
 .portfolio-card {
+    width: 370px;
     transition: box-shadow 250ms var(--transition-cubic-bezier);
+
 }
 
 .portfolio-card:hover,
@@ -970,29 +969,28 @@ $$$$$$$$$$$$$$$$
     height: 100%;
 
     padding: 63px 24px;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 1.55;
+    line-height: 1.6;
     letter-spacing: 0.03em;
 
     color: var(--color-white-text);
     background-color: var(--color-portfolio-label-bg);
 
     transform: translateY(100%);
-    transition: opacity 250ms var(--transition-cubic-bezier),
+    transition:
         transform 250ms var(--transition-cubic-bezier);
 }
 
 .portfolio-card:hover .portfolio-overlay,
 .portfolio-card:focus .portfolio-overlay {
     transform: translateY(0%);
-    opacity: 1;
 }
 
 .portfolio-wrapper {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
+
 }
 
 .portfolio-card-title {
@@ -1007,7 +1005,7 @@ $$$$$$$$$$$$$$$$
 .portfolio-card-text {
 
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--color-grey-p);
 }
