@@ -1,5 +1,4 @@
 :root {
-
     --c-primary__blue: #2196F3;
     --c-hover__blue: #188CE8;
     --c-overlay__blue: rgba(33, 150, 243, 0.9);
@@ -10,22 +9,23 @@
 
     --c-text__grey: #757575;
 
-    -c--button__grey: #F5F4FA;
+    --c-portfolio-button-bg__grey: #F5F4FA;
+    --c-features-bg__grey: #F5F4FA;
 
     --c-border__grey: #ECECEC;
+
     --c-border__grey-clients: #AFB1B8;
-    --color-background-features: #F5F4FA;
+    --c-social-bg__grey: #AFB1B8;
 
-    --color-white-text: #FFFFFF;
-    --color-white-background: #EEEEEE;
-    --color-white-background2: #F5F5F5;
+    --c-text__white: #FFFFFF;
 
-    --color-grey-social__icon: #AFB1B8;
+    --c-background__white: #EEEEEE;
 
-    --color-modal-bg: rgba(0, 0, 0, 0.2);
+    --c-background__white2: #F5F5F5;
 
-    --color-label-bg: rgba(47, 48, 58, 0.8);
+    --c-modal-bg__transparent: rgba(0, 0, 0, 0.2);
 
+    --c-label-bg__transparent: rgba(47, 48, 58, 0.8);
 
     --transition-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -246,7 +246,7 @@ $$$$$$$$$$$$$$$$
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--color-white-text);
+    color: var(--c-text__white);
 }
 
 .hero__button {
@@ -265,7 +265,7 @@ $$$$$$$$$$$$$$$$
 
     cursor: pointer;
 
-    color: var(--color-white-text);
+    color: var(--c-text__white);
     background-color: var(--c-primary__blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -286,7 +286,7 @@ $$$$$$$$$$$$$$$$
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--color-modal-bg);
+    background-color: var(--c-modal-bg__transparent);
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -308,7 +308,7 @@ $$$$$$$$$$$$$$$$
     width: 528px;
     height: 581px;
 
-    background-color: var(--color-white-text);
+    background-color: var(--c-text__white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
@@ -329,7 +329,7 @@ $$$$$$$$$$$$$$$$
     align-items: center;
     justify-content: center;
 
-    background-color: var(--color-white-text);
+    background-color: var(--c-text__white);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     color: var(--c-secondary__black);
@@ -505,7 +505,7 @@ $$$$$$$$$$$$$$$$
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: var(--color-white-text);
+    color: var(--c-text__white);
 
     transition: background-color 250ms cubic-bezier(.17, .67, .83, .67);
 }
@@ -533,7 +533,7 @@ $$$$$$$$$$$$$$$$
     width: 270px;
     height: 120px;
 
-    background-color: var(--color-background-features);
+    background-color: var(--c-features-bg__grey);
     border-radius: 4px;
 
     margin-bottom: 30px;
@@ -595,7 +595,7 @@ $$$$$$$$$$$$$$$$
 
     width: 100%;
     height: 70px;
-    background-color: var(--color-label-bg);
+    background-color: var(--c-label-bg__transparent);
 
     display: flex;
     align-items: center;
@@ -610,7 +610,7 @@ $$$$$$$$$$$$$$$$
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: var(--color-white-text);
+    color: var(--c-text__white);
 }
 
 /*++++++++++services++++++++++*/
@@ -668,8 +668,8 @@ $$$$$$$$$$$$$$$$
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: var(--color-grey-social__icon);
-    background-color: var(--color-white-text);
+    color: var(--c-social-bg__grey);
+    background-color: var(--c-text__white);
 
     transition: color 250ms var(--transition-cubic-bezier),
         background-color 250ms var(--transition-cubic-bezier);
@@ -678,7 +678,7 @@ $$$$$$$$$$$$$$$$
 .social__link:hover,
 .social__link:focus {
     background-color: var(--c-primary__blue);
-    color: var(--color-white-text);
+    color: var(--c-text__white);
 }
 
 .social__icon {
@@ -746,7 +746,7 @@ $$$$$$$$$$$$$$$$
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--color-white-text);
+    color: var(--c-text__white);
 }
 
 .footer__logo {
@@ -764,7 +764,7 @@ $$$$$$$$$$$$$$$$
 .footer__logo-studio {
     margin-bottom: 20px;
 
-    color: var(--color-white-text);
+    color: var(--c-text__white);
 }
 
 
@@ -791,7 +791,7 @@ $$$$$$$$$$$$$$$$
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: var(--color-white-text);
+    color: var(--c-text__white);
     margin-bottom: 20px;
 }
 
@@ -809,7 +809,7 @@ $$$$$$$$$$$$$$$$
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: var(--color-white-text);
+    color: var(--c-text__white);
     background-color: rgba(255, 255, 255, 0.1);
 
     transition: background-color 250ms var(--transition-cubic-bezier);
@@ -842,7 +842,7 @@ $$$$$$$$$$$$$$$$
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--color-white-text);
+    color: var(--c-text__white);
 }
 
 .subscribe__input {
@@ -886,11 +886,11 @@ $$$$$$$$$$$$$$$$
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: var(--color-white-text);
+    color: var(--c-text__white);
 }
 
 .footer-icon-send {
-    fill: var(--color-white-text);
+    fill: var(--c-text__white);
 }
 
 
@@ -914,7 +914,7 @@ $$$$$$$$$$$$$$$$
 .portfolio-nav__button {
     padding: 6px 22px;
     font-family: inherit;
-    background-color: var(-c--button__grey);
+    background-color: var(--c-portfolio-button-bg__grey);
     border-radius: 4px;
     font-size: 16px;
     line-height: 1.62;
@@ -929,7 +929,7 @@ $$$$$$$$$$$$$$$$
 .portfolio-nav__button:hover,
 .portfolio-nav__button:focus {
     background-color: var(--c-primary__blue);
-    color: var(--color-white-text);
+    color: var(--c-text__white);
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -973,7 +973,7 @@ $$$$$$$$$$$$$$$$
     line-height: 1.6;
     letter-spacing: 0.03em;
 
-    color: var(--color-white-text);
+    color: var(--c-text__white);
     background-color: var(--c-overlay__blue);
 
     transform: translateY(100%);
