@@ -96,22 +96,13 @@ $$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$
 */
 
-.envelope-icon {
+.address__icon--envelope {
     margin-right: 10px;
 }
 
-.smartphone-icon {
+.address__icon--phone {
     margin-right: 10px;
 }
-
-
-
-/*
-################
-               main page 
-################
-*/
-/*++++++++++header++++++++++*/
 
 .page-header {
     border-bottom: 1px solid #ECECEC;
@@ -130,7 +121,7 @@ $$$$$$$$$$$$$$$$
     color: var(--color-light-blue);
 }
 
-.header-logo-studio {
+.logo__studio {
     color: var(--color-black-logo);
 }
 
@@ -139,6 +130,7 @@ $$$$$$$$$$$$$$$$
 .page-header__flex {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .nav {
@@ -147,9 +139,10 @@ $$$$$$$$$$$$$$$$
 
 .address__list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     gap: 50px;
-
 }
 
 .nav__list {
@@ -161,7 +154,7 @@ $$$$$$$$$$$$$$$$
     color: var(--color-light-blue);
 }
 
-.nav__list .nav-item {
+.nav__list .nav__item {
     position: relative;
 }
 
@@ -172,7 +165,7 @@ $$$$$$$$$$$$$$$$
     bottom: -1px;
 
     background-color: var(--color-light-blue);
-    border-radius: 2px;
+    border-radius: 22px;
     width: 100%;
     height: 4px;
 }
@@ -180,6 +173,7 @@ $$$$$$$$$$$$$$$$
 .nav__link {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     padding: 32px 0;
     font-weight: 500;
@@ -190,9 +184,6 @@ $$$$$$$$$$$$$$$$
 }
 
 .address__link {
-    display: flex;
-    align-items: center;
-
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
@@ -219,8 +210,8 @@ $$$$$$$$$$$$$$$$
     color: var(--color-light-blue);
 }
 
-.envelope-icon,
-.smartphone-icon {
+.address__icon--envelope,
+.address__icon--phone {
     fill: currentColor;
 }
 
@@ -243,7 +234,7 @@ $$$$$$$$$$$$$$$$
     /*to center a button. Button is inline-block, and can be aligned by  */
 }
 
-.hero-title {
+.hero__title {
     width: 696px;
     /*to transfer correctly text to new line*/
     margin: 0 auto;
@@ -259,7 +250,7 @@ $$$$$$$$$$$$$$$$
     color: var(--color-white-text);
 }
 
-.hero-button {
+.hero__button {
 
     min-height: 50px;
     /*so a button changes size if we type more text*/
@@ -284,8 +275,8 @@ $$$$$$$$$$$$$$$$
         box-shadow 250ms var(--transition-cubic-bezier);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
     background-color: #188CE8;
 }
 
@@ -326,7 +317,7 @@ $$$$$$$$$$$$$$$$
         opacity 250ms cubic-bezier(.17, .67, .83, .67);
 }
 
-.button-close-modal {
+.button-close {
     position: absolute;
 
     top: 9px;
@@ -350,7 +341,7 @@ $$$$$$$$$$$$$$$$
         fill 250ms cubic-bezier(.17, .67, .83, .67);
 }
 
-.icon-close {
+.button-close__icon {
     width: 18px;
     height: 18px;
     fill: currentColor;
@@ -358,8 +349,8 @@ $$$$$$$$$$$$$$$$
         fill 250ms cubic-bezier(.17, .67, .83, .67);
 }
 
-.button-close-modal:hover .icon-close,
-.button-close-modal:focus .icon-close {
+.button-close:hover .button-close__icon,
+.button-close:focus .button-close__icon {
     fill: var(--color-light-blue);
 }
 
@@ -370,10 +361,9 @@ $$$$$$$$$$$$$$$$
 
 .is-hidden .modal {
     opacity: 0;
-
 }
 
-.form-header {
+.form__header {
     text-align: center;
     margin-bottom: 12px;
     font-weight: 700;
@@ -383,7 +373,7 @@ $$$$$$$$$$$$$$$$
     color: var(--color-black-h)
 }
 
-.form-label {
+.form__label {
     display: block;
     margin-bottom: 4px;
     font-weight: 400;
@@ -393,12 +383,12 @@ $$$$$$$$$$$$$$$$
     color: var(--color-grey-p)
 }
 
-.form-wrapper {
+.form__wrapper {
     position: relative;
     margin-bottom: 10px
 }
 
-.form-input {
+.form__input {
     padding-left: 42px;
     width: 100%;
     height: 40px;
@@ -409,7 +399,7 @@ $$$$$$$$$$$$$$$$
         border-color 250ms cubic-bezier(.17, .67, .83, .67);
 }
 
-.form-icon {
+.form__icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -419,11 +409,11 @@ $$$$$$$$$$$$$$$$
         fill 250ms cubic-bezier(.17, .67, .83, .67);
 }
 
-.form-input:focus {
+.form__input:focus {
     border-color: var(--color-light-blue);
 }
 
-.form-input:focus+.form-icon {
+.form__input:focus+.form__icon {
     fill: var(--color-light-blue);
 }
 
@@ -453,19 +443,19 @@ $$$$$$$$$$$$$$$$
     border-color: var(--color-light-blue);
 }
 
-.form-checkbox-wrapper {
+.checkbox__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-.form-checkbox-input {
+.checkbox__input {
     appearance: none;
 
 }
 
-.custom-checkbox {
+.checkbox__custom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -478,12 +468,21 @@ $$$$$$$$$$$$$$$$
 
 }
 
-.form-checkbox-input:checked+.custom-checkbox {
+.checkbox__input:checked+.checkbox__custom {
     background-color: var(--color-light-blue);
     border-color: var(--color-light-blue);
 }
 
-.form-link {
+.checkbox__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--color-grey-p);
+}
+
+.checkbox__link {
     margin-left: 4px;
     font-weight: 400;
     font-size: 14px;
@@ -492,7 +491,7 @@ $$$$$$$$$$$$$$$$
     color: var(--color-light-blue);
 }
 
-.form-submit-button {
+.button-submit {
     display: block;
     margin: 0 auto;
 
@@ -524,8 +523,8 @@ $$$$$$$$$$$$$$$$
     color: var(--color-white-text);
 }
 
-.form-submit-button:hover,
-.form-submit-button:focus {
+.button-submit:hover,
+.button-submit:focus {
     background-color: var(--color-active-button-blue);
 }
 
