@@ -20,7 +20,7 @@
     --color-white-background: #EEEEEE;
     --color-white-background2: #F5F5F5;
 
-    --color-grey-social-icon: #AFB1B8;
+    --color-grey-social__icon: #AFB1B8;
 
     --color-modal-bg: rgba(0, 0, 0, 0.2);
 
@@ -494,34 +494,23 @@ $$$$$$$$$$$$$$$$
 .button-submit {
     display: block;
     margin: 0 auto;
-
-
     width: 200px;
     height: 50px;
-
     background-color: var(--color-light-blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-
     cursor: pointer;
-
-    transition: background-color 250ms cubic-bezier(.17, .67, .83, .67);
-}
-
-.form-submit-name {
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-
-    display: inline-block;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
-
     color: var(--color-white-text);
+
+    transition: background-color 250ms cubic-bezier(.17, .67, .83, .67);
 }
+
 
 .button-submit:hover,
 .button-submit:focus {
@@ -531,12 +520,12 @@ $$$$$$$$$$$$$$$$
 /*++++++++++hero++++++++++*/
 
 /*++++++++++features++++++++++*/
-.features-list {
+.features__list {
     display: flex;
     gap: 30px;
 }
 
-.features-container {
+.features__wrapper {
     display: flex;
 
     justify-content: center;
@@ -554,17 +543,17 @@ $$$$$$$$$$$$$$$$
     transition: box-shadow 250ms var(--transition-cubic-bezier);
 }
 
-.features-container:hover,
-.features-container:focus {
+.features__wrapper:hover,
+.features__wrapper:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
-.features-item {
+.features__item {
     width: 270px;
 }
 
-.features-title {
+.features__title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -576,7 +565,7 @@ $$$$$$$$$$$$$$$$
     color: var(--color-black-h);
 }
 
-.features-text {
+.features__description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -585,22 +574,22 @@ $$$$$$$$$$$$$$$$
 
 /*++++++++++features++++++++++*/
 
-/*++++++++++about-us++++++++++*/
+/*++++++++++services++++++++++*/
 
-.about-us {
+.services {
     padding-top: 0;
 }
 
-.about-us-list {
+.services__list {
     display: flex;
     gap: 30px;
 }
 
-.about-us-wrapper {
+.services__wrapper {
     position: relative;
 }
 
-.about-us-label {
+.services__label {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -614,7 +603,7 @@ $$$$$$$$$$$$$$$$
     justify-content: center;
 }
 
-.about-us-description {
+.services__description {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -625,33 +614,31 @@ $$$$$$$$$$$$$$$$
     color: var(--color-white-text);
 }
 
-/*++++++++++about-us++++++++++*/
+/*++++++++++services++++++++++*/
 
-/*++++++++++our-team++++++++++*/
+/*++++++++++team++++++++++*/
 
-.our-team {
+.team {
     background-color: #F5F4FA;
 }
 
-.our-team-title {}
-
-.out-team-list {
+.team__list {
     display: flex;
     gap: 30px;
 }
 
-.our-team-item {
+.team__item {
     text-align: center;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-wrapper {
+.team__wrapper {
     padding: 30px 0;
 }
 
-.our-team-name {
+.team__name {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -660,7 +647,7 @@ $$$$$$$$$$$$$$$$
     color: var(--color-black-h);
 }
 
-.our-team-text {
+.team__position {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -668,48 +655,48 @@ $$$$$$$$$$$$$$$$
     margin-bottom: 16px;
 }
 
-.social-list {
+.social__list {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
 
-.social-item {}
+.social__item {}
 
-.social-link {
+.social__link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: var(--color-grey-social-icon);
+    color: var(--color-grey-social__icon);
     background-color: var(--color-white-text);
 
     transition: color 250ms var(--transition-cubic-bezier),
         background-color 250ms var(--transition-cubic-bezier);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
     background-color: var(--color-light-blue);
     color: var(--color-white-text);
 }
 
-.social-icon {
+.social__icon {
     fill: currentColor;
 }
 
-/*++++++++++our-team++++++++++*/
+/*++++++++++team++++++++++*/
 
-/*++++++++++our-team++++++++++*/
-.clients-list {
+/*++++++++++team++++++++++*/
+.clients__list {
     display: flex;
     gap: 30px;
 }
 
-.clients-link {
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -723,17 +710,17 @@ $$$$$$$$$$$$$$$$
         border-color 250ms var(--transition-cubic-bezier);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
     border-color: var(--color-light-blue);
     color: var(--color-light-blue);
 }
 
-.clients-icon {
+.clients__icon {
     fill: currentColor;
 }
 
-/*++++++++++our-team++++++++++*/
+/*++++++++++team++++++++++*/
 
 /*++++++++++footer++++++++++*/
 
@@ -742,7 +729,7 @@ $$$$$$$$$$$$$$$$
     padding: 60px 0;
 }
 
-.footer-flex {
+.footer__flex {
     display: flex;
     align-items: baseline;
     gap: 70px;
@@ -752,12 +739,19 @@ $$$$$$$$$$$$$$$$
     width: auto;
 }
 
-.footer-address {
+.footer__address {
     font-style: normal;
     margin-top: 20px;
 }
 
-.footer-logo {
+.footer-address__street {
+    margin-bottom: 9px font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-white-text);
+}
+
+.footer__logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -765,30 +759,22 @@ $$$$$$$$$$$$$$$$
     letter-spacing: 0.03em;
 }
 
-.footer-logo-web {
+.footer__logo-web {
     color: var(--color-light-blue);
 }
 
-.footer-logo-studio {
+.footer__logo-studio {
     margin-bottom: 20px;
 
     color: var(--color-white-text);
 }
 
-.address-street {
-    margin-bottom: 9px;
 
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--color-white-text);
-}
-
-.footer-item:not(:last-child) {
+.footer-address__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer-link {
+.footer-address__link {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -800,7 +786,7 @@ $$$$$$$$$$$$$$$$
     width: auto;
 }
 
-.footer-social-title {
+.footer-social__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -811,16 +797,16 @@ $$$$$$$$$$$$$$$$
     margin-bottom: 20px;
 }
 
-.footer-social-list {
+.footer-social__list {
     display: flex;
     gap: 10px;
     justify-content: left;
     align-items: left;
 }
 
-.footer-social-item {}
+.footer-social__item {}
 
-.footer-social-link {
+.footer-social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -833,25 +819,25 @@ $$$$$$$$$$$$$$$$
     transition: background-color 250ms var(--transition-cubic-bezier);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
     background-color: var(--color-light-blue);
 }
 
-.footer-social-icon {
+.footer-social__icon {
     fill: currentColor;
 }
 
-.footer-subscription {
+.subscribe {
     margin-left: auto;
 }
 
-.footer-form {
+.subscribe__form {
     display: flex;
 
 }
 
-.footer-label {
+.subscribe__label {
     display: inline-block;
     margin-bottom: 20px;
 
@@ -863,7 +849,7 @@ $$$$$$$$$$$$$$$$
     color: var(--color-white-text);
 }
 
-.footer-input {
+.subscribe__input {
 
     width: 358px;
     height: 50px;
@@ -883,7 +869,7 @@ $$$$$$$$$$$$$$$$
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-submit-button {
+.subscribe__button {
     cursor: pointer;
 
     display: flex;
@@ -917,7 +903,9 @@ $$$$$$$$$$$$$$$$
 
 
 /*===========portfolio-page==========*/
-
+.portfolio-flex {
+    flex-direction: column;
+}
 
 .portfolio-buttons-list {
     display: flex;
@@ -955,6 +943,7 @@ $$$$$$$$$$$$$$$$
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
 }
 
 .portfolio-card {
