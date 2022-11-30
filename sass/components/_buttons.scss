@@ -17,12 +17,12 @@
   letter-spacing: 0.06em;
   color: var(--c-text__white);
 
-  transition: background-color 250ms cubic-bezier(.17, .67, .83, .67);
-}
-
-.button-submit:hover,
-.button-submit:focus {
-  background-color: var(--c-hover__blue);
+  transition: 
+    background-color 250ms cubic-bezier(.17, .67, .83, .67);
+    
+    &:hover,
+    &:focus
+      background-color: var(--c-hover__blue);
 }
 
 
@@ -50,11 +50,10 @@
   transition:
     background-color 250ms var(--transition-cubic-bezier),
     box-shadow 250ms var(--transition-cubic-bezier);
-}
 
-.button__hero:hover,
-.button__hero:focus {
-  background-color: #188CE8;
+    &:hover,
+    &:focus
+      background-color: var(--c-hover__blue);
 }
 
 // close
@@ -65,11 +64,11 @@
   fill: currentColor;
   transition:
     fill 250ms cubic-bezier(.17, .67, .83, .67);
-}
 
-.button-close:hover .button-close__icon,
-.button-close:focus .button-close__icon {
-  fill: var(--c-primary__blue);
+
+  &:hover .button-close__icon,
+  &:focus .button-close__icon
+    fill: var(--c-primary__blue);
 }
 
 // subscribe
@@ -96,4 +95,8 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--c-text__white);
-}
+    
+    &:hover,
+    &:focus
+      background-color: var(--c-hover__blue);
+    }
