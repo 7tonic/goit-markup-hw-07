@@ -6,26 +6,33 @@
 @import 'base/normalize';
 @import 'base/reset';
 
-@import 'components/page-header';
+@import 'components/header';
+@import 'components/logo';
+@import 'components/nav';
 @import 'components/buttons';
-
-@import 'components/cards';
-@import 'components/checkbox';
-@import 'components/clients';
 @import 'components/contacts';
+
+@import 'components/hero';
+
 @import 'components/features';
+
+@import 'components/services';
+
+@import 'components/clients';
+
+@import 'components/team';
+
+@import 'components/social';
+@import 'components/subscribe';
+
+@import 'components/modal';
+@import 'components/checkbox';
+@import 'components/form';
+
 @import 'components/footer';
 @import 'components/footer__contacts';
 @import 'components/footer__social';
-@import 'components/form';
-@import 'components/hero';
 
-@import 'components/logo';
-@import 'components/modal';
-@import 'components/nav';
 @import 'components/portfolio';
 @import 'components/portfolio-nav';
-@import 'components/services';
-@import 'components/social';
-@import 'components/subscribe';
-@import 'components/team';
+@import 'components/cards';

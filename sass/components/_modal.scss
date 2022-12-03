@@ -35,30 +35,6 @@
     opacity 250ms cubic-bezier(.17, .67, .83, .67);
 }
 
-.button-close {
-  position: absolute;
-
-  top: 9px;
-  right: 7px;
-
-  width: 30px;
-  height: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: var(--c-text__white);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  color: var(--c-secondary__black);
-
-  cursor: pointer;
-
-  transition:
-    fill 250ms cubic-bezier(.17, .67, .83, .67);
-}
-
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
