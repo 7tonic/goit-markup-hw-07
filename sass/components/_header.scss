@@ -1,9 +1,9 @@
 .header {
-  border-bottom: 1px solid #ECECEC;
-}
+  border-bottom: 1px solid #ececec;
 
-.header__flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

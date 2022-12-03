@@ -71,9 +71,8 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
-
 .header__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,6 +282,14 @@ img {
   background-color: var(--c-hover__blue);
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,15 +303,12 @@ img {
   margin-left: auto;
   gap: 50px;
 }
-
 .contacts__icon--envelope {
   margin-right: 10px;
 }
-
 .contacts__icon--phone {
   margin-right: 10px;
 }
-
 .contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,14 +328,10 @@ img {
   -webkit-transition: color 250ms var(--transition-cubic-bezier), border-color 250ms var(--transition-cubic-bezier);
   transition: color 250ms var(--transition-cubic-bezier), border-color 250ms var(--transition-cubic-bezier);
 }
-
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--c-primary__blue);
 }
-
-.contacts__icon--envelope,
-.contacts__icon--phone {
+.contacts__icon--envelope, .contacts__icon--phone {
   fill: currentColor;
 }
 
@@ -467,7 +467,6 @@ img {
   display: flex;
   gap: 30px;
 }
-
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,13 +485,10 @@ img {
   -webkit-transition: color 250ms var(--transition-cubic-bezier), border-color 250ms var(--transition-cubic-bezier);
   transition: color 250ms var(--transition-cubic-bezier), border-color 250ms var(--transition-cubic-bezier);
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: var(--c-primary__blue);
   color: var(--c-primary__blue);
 }
-
 .clients__icon {
   fill: currentColor;
 }
@@ -672,13 +668,11 @@ img {
           justify-content: center;
   margin-bottom: 30px;
 }
-
 .checkbox__input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
-
 .checkbox__custom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -696,12 +690,10 @@ img {
   border: 2px solid var(--c-secondary__black);
   border-radius: 2px;
 }
-
 .checkbox__input:checked + .checkbox__custom {
   background-color: var(--c-primary__blue);
   border-color: var(--c-primary__blue);
 }
-
 .checkbox__label {
   font-weight: 400;
   font-size: 14px;
@@ -709,7 +701,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--c-text__grey);
 }
-
 .checkbox__link {
   margin-left: 4px;
   font-weight: 400;
@@ -971,18 +962,14 @@ img {
   transition: box-shadow 250ms var(--transition-cubic-bezier);
   transition: box-shadow 250ms var(--transition-cubic-bezier), -webkit-box-shadow 250ms var(--transition-cubic-bezier);
 }
-
-.card:hover,
-.card:focus {
+.card:hover, .card:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .card__thumb {
   position: relative;
   overflow: hidden;
 }
-
 .card__overlay {
   position: absolute;
   top: 0;
@@ -1002,19 +989,15 @@ img {
   transition: transform 250ms var(--transition-cubic-bezier);
   transition: transform 250ms var(--transition-cubic-bezier), -webkit-transform 250ms var(--transition-cubic-bezier);
 }
-
-.card:hover .card__overlay,
-.card:focus .card__overlay {
+.card:hover .card__overlay, .card:focus .card__overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
-
 .card__wrapper {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-top: none;
 }
-
 .card__title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -1023,7 +1006,6 @@ img {
   letter-spacing: 0.06em;
   color: var(--c-text__black);
 }
-
 .card__description {
   font-size: 16px;
   line-height: 1.875;
