@@ -1,13 +1,16 @@
 .footer-social {
   width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 
   &__title {
+    display: block;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--c-text__white);
     margin-bottom: 20px;
   }
@@ -28,7 +31,6 @@
     border-radius: 50%;
     color: var(--c-text__white);
     background-color: rgba(255, 255, 255, 0.1);
-
     transition: background-color 250ms var(--transition-cubic-bezier);
   }
 
