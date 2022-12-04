@@ -867,13 +867,6 @@ img {
   fill: var(--c-text__white);
 }
 
-.portfolio-flex {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .portfolio-nav {
   display: -webkit-box;
   display: -ms-flexbox;
