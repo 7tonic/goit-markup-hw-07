@@ -4,30 +4,12 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.logo__web {
   color: var(--c-primary__blue);
-}
+  &__studio--header {
+    @include logoAccent(var(--c-text__black));
+  }
 
-.logo__studio {
-  color: var(--c-secondary__black);
-}
-
-.footer__logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.footer__logo-web {
-  color: var(--c-primary__blue);
-}
-
-.footer__logo-studio {
-  margin-bottom: 20px;
-
-  color: var(--c-text__white);
+  &__studio--footer {
+    @include logoAccent(var(--c-text__white));
+  }
 }
